@@ -1,0 +1,94 @@
+body {
+    background-color: #4f5051;
+    color: white;
+    font-family: 'Roboto', serif;
+    width: 1400px;
+    height: 700px;
+}
+div#header {
+    display: inline-block;
+    left: 0%;
+    font-size: 20px;
+    padding-left: 30px;
+    position: relative;
+}
+div#header h3 {
+    margin-bottom: 0px;
+}
+div#header h5 {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+div#scoreContainer {
+    float: right;
+}
+div#main {
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    padding-top: 50px;
+}
+div.block {
+    margin: 7.5px;
+    float: left;
+}
+div#block1 {
+    background-color: #40b74a;
+    width: 235px;
+    height: 235px;
+    transition: opacity 0.5s, box-shadow 0.5s;
+}
+div#block2 {
+    background-color: #e20016;
+    width: 235px;
+    height: 235px;
+    transition: opacity 0.5s, box-shadow 0.5s;
+}
+div#block3 {
+    background-color: #e4e822;
+    width: 235px;
+    height: 235px;
+    transition: opacity 0.5s, box-shadow 0.5s;
+}
+div#block4 {
+    background-color: #157fd6;
+    width: 235px;
+    height: 235px;
+    transition: opacity 0.5s, box-shadow 0.5s;
+}
+div.block:active {
+    opacity: 0.8;
+    box-shadow: 0 0 5px 10px #e4e822;
+}
+div#startArea {
+    display: block;
+    text-align: center;
+    margin: 20px;
+    padding: 3px;
+}
+button#startButton {
+    padding: 10px;
+    background-color: #333fc6;
+    font-family: 'Roboto', serif;
+    color: white;
+    border: none;
+    border-radius: 7%;
+}
+button#startButton:hover {
+    cursor: pointer;
+}
+@keyframes clicked {
+    0% {
+        opacity: 1;
+        box-shadow: 0 0 0 0 #e4e822;
+    }
+    50% {
+        opacity: 0.5;
+        box-shadow: 0 0 5px 10px #e4e822;
+    }
+    100% {
+        opacity: 1;
+        box-shadow: 0 0 0 0 #e4e822;
+    }
+}
